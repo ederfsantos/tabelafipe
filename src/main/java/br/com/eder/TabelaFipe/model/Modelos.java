@@ -1,4 +1,8 @@
 package br.com.eder.TabelaFipe.model;
 
-public record Modelos() {
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
+import java.util.List;
+@JsonIgnoreProperties(ignoreUnknown = true)
+public record Modelos(List<Dados> modelos) {
 }
