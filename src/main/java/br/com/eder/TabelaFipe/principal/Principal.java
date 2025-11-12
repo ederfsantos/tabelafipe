@@ -33,6 +33,7 @@ public class Principal {
                         Caminhão
                         Sair
                         
+                        
                         Digite uma das opções para consultar:
                         """;
                 System.out.println(menu);
@@ -42,8 +43,11 @@ public class Principal {
                     endereco = URL_BASE + "carros/marcas";
                 } else if (opcao.toLowerCase().contains("mot")) {
                     endereco = URL_BASE + "motos/marcas";
-                } else {
+                } else if(opcao.toLowerCase().contains("cam")){
+
                     endereco = URL_BASE + "caminhoes/marcas";
+                }else{
+                    break;
                 }
 
 
